@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function() {
   var datoGuardado = localStorage.getItem("datoGuardado");
-  document.getElementById("data").textContent = datoGuardado;
+  if (datoGuardado !== null) {
+    document.getElementById("data").textContent = datoGuardado;
+  }
 });
